@@ -1,0 +1,150 @@
+// Grid system
+
+.main, .sidebar {
+  height: 100vh;
+  padding: 2rem;
+  overflow: auto;
+}
+.main {
+  @include make-col-ready();
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.sidebar {
+  @include make-col-ready();
+  flex: 0 0 25%;
+  max-width: 25%;
+  display: flex;
+  .sidebar-content {
+    background-image: linear-gradient($tatsu-red 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 1px 3px;
+    background-repeat: repeat-y;
+    height: 100%;
+    flex: 1;
+  }
+}
+
+// exclude mobile and tablets
+
+@media (min-width: 993px) {
+
+  .main-content {
+    max-width: 75%;
+  }
+}
+
+
+// Tablets
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+
+  .main {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+  }
+  .sidebar {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+}
+
+// Mobile
+
+@media (max-width: 768px) {
+  .main, .sidebar {
+    max-width: 100%;
+    flex: 0 0 100%;
+    height: auto;
+  }
+  .sidebar .sidebar-content {
+    background-image: none;
+  }
+}
+
+// Padding Classes
+
+  // .33rem
+  .padding-lv1-ver        { padding: .33rem 0!important; }
+  .padding-lv1-hor        { padding: 0 .33rem!important; }
+  .padding-lv1-full       { padding: .33rem!important; }
+  .padding-lv1-top        { padding-top: .33rem!important; }
+  .padding-lv1-bottom     { padding-bottom: .33rem!important; }
+
+
+  // .66rem
+  .padding-lv2-ver        { padding: .66rem 0!important; }
+  .padding-lv2-hor        { padding: 0 .66rem!important; }
+  .padding-lv2-full       { padding: .66rem!important; }
+  .padding-lv2-top        { padding-top: .66rem!important; }
+  .padding-lv2-bottom     { padding-bottom: .66rem!important; }
+
+  // 1rem
+  .padding-lv3-ver        { padding: 1rem 0!important; }
+  .padding-lv3-hor        { padding: 0 1rem!important; }
+  .padding-lv3-full       { padding: 1rem!important; }
+  .padding-lv3-top        { padding-top: 1rem!important; }
+  .padding-lv3-bottom     { padding-bottom: 1rem!important; }
+
+  // 2rem
+  .padding-lv4-ver        { padding: 2rem 0!important; }
+  .padding-lv4-hor        { padding: 0 2rem!important; }
+  .padding-lv4-full       { padding: 2rem!important; }
+  .padding-lv4-top        { padding-top: 2rem!important; }
+  .padding-lv4-bottom     { padding-bottom: 2rem!important; }
+
+  // 3rem
+  .padding-lv5-ver        { padding: 3rem 0; }
+  .padding-lv6-ver        { padding: 4rem 0 6rem; }
+  .padding-lv7-ver        { padding: 9rem 0; }
+
+
+// Margin classes
+
+  // .33rem
+  .margin-lv1-ver        { margin: .33rem 0!important; }
+  .margin-lv1-hor         { margin: 0 .33rem!important; }
+  .margin-lv1-top         { margin-top: .33rem!important; }
+  .margin-lv1-bottom      { margin-bottom: .33rem!important; }
+  .margin-lv1-left        { margin-left: .33rem!important; }
+  .margin-lv1-right       { margin-right: .33rem!important; }
+
+  // .66rem
+  .margin-lv2-ver        { margin: .66rem 0!important; }
+  .margin-lv2-hor         { margin: 0 .66rem!important; }
+  .margin-lv2-top         { margin-top: .66rem!important; }
+  .margin-lv2-bottom      { margin-bottom: .66rem!important; }
+  .margin-lv2-left        { margin-left: .66rem!important; }
+  .margin-lv2-right       { margin-right: .66rem!important; }
+
+  // 1rem
+  .margin-lv3-ver        { margin: 1rem 0!important; }
+  .margin-lv3-hor         { margin: 0 1rem!important; }
+  .margin-lv3-top         { margin-top: 1rem!important; }
+  .margin-lv3-bottom      { margin-bottom: 1rem!important; }
+  .margin-lv3-left        { margin-left: 1rem!important; }
+  .margin-lv3-right       { margin-right: 1rem!important; }
+
+  // 2rem
+  .margin-lv4-ver        { margin: 2rem 0!important; }
+  .margin-lv4-hor         { margin: 0 2rem!important; }
+  .margin-lv4-top         { margin-top: 2rem!important; }
+  .margin-lv4-bottom      { margin-bottom: 2rem!important; }
+  .margin-lv4-left        { margin-left: 2rem!important; }
+  .margin-lv4-right       { margin-right: 2rem!important; }
+
+// remove margin/padding from elements
+
+  .unmargin               { margin: 0!important; }
+  .unmargin-top           { margin-top: 0!important; }
+  .unmargin-bottom        { margin-bottom: 0!important; }
+  .unmargin-left          { margin-left: 0!important; }
+  .unmargin-right         { margin-right: 0!important; }
+  .unpadding              { padding: 0!important; }
+  .unpadding-top          { padding-top: 0!important; }
+  .unpadding-bottom       { padding-bottom: 0!important; }
+  .unpadding-right        { padding-right: 0!important; }
+  .unpadding-left         { padding-left: 0!important; }
+

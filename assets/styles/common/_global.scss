@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'FaggotPin'; /*a name to be used later*/
+    src: url('../fonts/FaggottPinStrada.ttf'); /*URL to font*/
+}
+html, body {
+  color: $tatsu-blue;
+  font-famiily: 'Helvetica', sans-serif;
+  font-size: 17px;
+}
+h1, h2, h3, h4, h5, h6, .nav li a {
+  font-family: 'FaggotPin';
+  letter-spacing: 1px;
+}
+a {
+  color: $tatsu-red;
+  &:hover, &:focus, &:active {
+    color: $tatsu-red;
+  }
+}
+.tatsu-red {
+  color: $tatsu-red;
+}
+.tatsu-blue {
+  color: $tatsu-blue;
+}
+
+// menu
+
+
+.brand {
+  display: block;
+  margin-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+}
+.menu-dots {
+  display: block;
+  height: 3px;
+  background-image: linear-gradient(to right, $tatsu-red 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
+  margin: 1rem 0;
+  &.big-space {
+    margin: 2rem 0;
+  }
+}
+.nav li {
+  display: block;
+  width: 100%;
+  text-align: left;
+  a {
+    text-align: left;
+    display: block;
+    padding: .12rem;
+    color: $tatsu-blue;
+    font-size: 15px;
+    &:hover, &:focus, &:active {
+      color: $tatsu-blue;
+    }
+  }
+}
+.social-menu li {
+  float: left;
+  padding: .33rem;
+  margin-top: 1rem;
+}
+
+// general helpers
+
+.page-header h1 {
+  font-family: 'Courier New', serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding-bottom: .25rem;
+  border-bottom: 2px solid $tatsu-red;
+  display: inline-block;
+}
+
