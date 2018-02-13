@@ -1,7 +1,7 @@
 <header class="banner">
-  <div class="container text-center">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="" width="210"></a>
-    <h6>
+  <div class="container">
+    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.png" alt="" width="190"></a>
+    <h6 class="brand-info">
       Artist
       <span class="tatsu-red">/</span>
       Illustrator
@@ -17,8 +17,8 @@
       ?>
     </nav>
     <ul class="social-menu list-unstyled">
-      <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.png" alt="" width="24"></a></li>
-      <li><a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.png" alt="" width="20"></a></li>
+      <li><a href="https://www.instagram.com/tatsunocatsup/"><img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.png" alt="" width="24"></a></li>
+      <li><a href="https://www.facebook.com/Tatsu-Beltr%C3%A1n-1140330752770436/"><img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.png" alt="" width="20"></a></li>
     </ul>
   </div>
 </header>

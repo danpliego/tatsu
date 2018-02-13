@@ -31,6 +31,10 @@ a {
   display: block;
   margin-bottom: 1rem;
 }
+.brand-info {
+  font-size: 14px;
+  text-align: center;
+}
 img {
   max-width: 100%;
 }
@@ -55,9 +59,10 @@ img {
     display: block;
     padding: .12rem;
     color: $tatsu-blue;
-    font-size: 15px;
+    font-size: 14px;
     &:hover, &:focus, &:active {
-      color: $tatsu-blue;
+      color: $tatsu-red;
+      text-decoration: none;
     }
   }
 }
