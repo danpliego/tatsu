@@ -29,7 +29,12 @@ use Roots\Sage\Wrapper;
         </div>
         <div class="main">
           <div class="main-content">
-            <?php include Wrapper\template_path(); ?>
+            <div class="main-content-info">
+              <?php include Wrapper\template_path(); ?>
+            </div>
+          </div>
+          <div class="main-footer text-center">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/copy-right.png" alt="" width="700">
           </div>
         </div>
       </div><!-- /.content -->

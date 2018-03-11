@@ -4,7 +4,7 @@
 }
 html, body {
   color: $tatsu-blue;
-  font-famiily: 'Helvetica', sans-serif;
+  font-family: 'Courier New', serif;
   font-size: 17px;
 }
 h1, h2, h3, h4, h5, h6, .nav li a {
@@ -23,6 +23,9 @@ a {
 .tatsu-blue {
   color: $tatsu-blue;
 }
+.home .page-header {
+  display: none;
+}
 
 // menu
 
@@ -33,7 +36,6 @@ a {
 }
 .brand-info {
   font-size: 14px;
-  text-align: center;
 }
 img {
   max-width: 100%;
@@ -54,6 +56,9 @@ img {
   display: block;
   width: 100%;
   text-align: left;
+  &.current_page_item a {
+    color: $tatsu-red;
+  }
   a {
     text-align: left;
     display: block;
